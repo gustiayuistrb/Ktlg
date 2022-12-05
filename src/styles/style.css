@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+:root{
+    --orange:#ff7800;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+* {
+	font-family: 'Poppins', sans-serif;
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+	outline: none; 
+	border: none;
+	text-decoration: none;
+	transition: all .2s linear;
+}
+body,
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+	background-color: #FCF8E8;
+}
+header{
+    top:0; left:0; right: 0;
+    display: flex;
+    align-items: center;
+	justify-content: space-between;
+    padding:2rem 2%;
+	background-color: #CEE5D0;
+    box-shadow: var(--box-shadow);
+}
+header .navigation-bar-dekstop a{
+    font-size: 2rem;
+    margin:0 1rem;
+    color:var(--black);
+	align-items: center;
+    font-weight: bolder;
+}
+
+header .navigation-bar-dekstop a:hover{
+    color:var(--orange);
+}
+.navigation-list-dekstop{
+	float: right;
+  margin-right: 10px;
+}
+.navigation-items-dekstop{
+	display: inline-block;
+	line-height: 40px;
+	margin: 0 5px;
+}
+.navigation-items-dekstop a{
+	font-size: 15px;
+	color:#333;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+.navigation-bar{
+	background-color: #FCF8E8;
+	width: 250px;
+	height: 100%;
+	z-index: 10;
+	-webkit-transform: translate(-300px, 0);
+	transform: translate(-300px, 0);
+	transition: transform 0.3s ease;
+}
+.navigation-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	width: 100%;
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.navigation-items{
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 15px;
+}
+.navigation-items a{
+	color: #333;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.navigation-bar-mobile {
+	background-color: #CEE5D0;
+	color: #333 !important;
+	width: 100%;
+	display: flex;
+	font-weight: 600;
+	font-size: 25px;
+	padding: 10px;
+	justify-content: space-between;
+}
+.icon-menu a {
+	text-decoration: none;
+	color: #333;
+}
+.hero {
+	display: grid;
+	align-items: center;
+	min-height: 400px;
+	text-align: left;
+	background: url('./images/heros/hero-image_4.jpg');
+	background-position: center;
+	width: 100%;
+	background-size: cover;
+}
+div .transbox {
+	background-color: #000;
+	opacity: 0.8;
+	padding: 20px 50px;
+}
+div .transbox h1 {
+	font-weight: bold;
+	color: #fff;
+}
+.hero-inner {
+	margin: 0 auto;
+	max-width: 800px;
+}
+.herotitle {
+	color: #fff;
+	text-align: center;
+	font-size: 25px;
+	text-shadow: 1px 1px #141414;
+}
+main {
+	width: 100%;
+	margin: 0 auto;
+}
+.restaurant-list {
+	padding: 20px;
+}
+.restaurant-list .align-center {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 4em;
+	text-align: center;
+}
+.restaurant-container {
+	margin: 32px auto auto;
+	text-align: left;
+	display: grid;
+}
+.card{
+	background-color: white;
+	border-radius: 10px;
+	padding: 1em;
+	box-shadow: 0px 10px 5px #b2bec3;
+	text-align: center;
+	font-family: "Poppins";
+}
+.card {
+	cursor: pointer;
+	transition: 0.3s;
+	text-align: center;
+	overflow: hidden;
+	background-color: #F9F9F9;
+	border-radius: .5rem;
+	box-shadow: 0px 10px 5px #b2bec3;
+    outline:var(--outline);
+    outline-offset: -1rem;
+    margin: 2rem;   
+}
+.card:hover {
+	outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+.location {
+	color: black;
+    font-size: 15px;
+	font-weight: 600;
+	text-align: left;
+}
+.top {
+	margin-top:15px;
+}
+.rating{
+	color: black;
+	font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+	font-weight: 600;
+	text-align: left;	
+}
+.restaurant-content {
+	padding: 1em;
+}
+.box{
+    padding:1rem;
+    outline-offset: -1rem;
+    margin: .5rem;   
+}
+.box img{
+    height:15rem;
+}
+.restaurant-image{
+	object-fit: cover;
+    object-position: center center;
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0px auto;
+	margin-bottom: 1em;
+}
+.restaurant_title {
+	font-weight: 700;
+	font-size: 3em;
+	margin-bottom: 0.5em;
+    text-align: center;
+
+}
+.card img {
+	max-width: 100%;
+	border-radius: 5px;
+	transition: 0.5s ease;
+}
+.card:hover img {
+	transform: scale(1.1);
+	transition: 1s ease;
+}
+.image{
+
+}
+.restaurant_title:hover {
+	opacity: 0.5
+}
+.restaurant_title a {
+	text-decoration: none;
+	color: inherit;
+}
+.restaurant-description {
+	text-align: left;
+	font-size: 12px;
+	line-height: 1.5em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+footer {
+	background-color: #94B49F;
+	color: #333;
+	font-size: 14px;
+	padding: 2em;
+	width: 100%;
+	text-align: center;
+}
+footer li{
+	list-style: none;
+}
+.skip-link {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	z-index: 100;
+	background-color: #CEE5D0;
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+}
+.skip-link:focus {
+	top: 100px;
+}
+
+@media screen and (min-width: 500px) {
+	header {
+		display: flex
+	}
+	.navigation-bar-mobile {
+		display: none
+	}
+	.navigation-bar {
+		display: none
+	}
+	.navigation-items-dekstop {
+    margin: 0;
+	}
+}
+@media screen and (max-width: 499px) {
+	header {
+		display: none
+	}
+	.navigation-bar{
+		padding: 14px;
+	}
+	.navigation-bar-dekstop {
+		display: none
+	}
+	.navigation-bar {
+		background-color: #FCF8E8;
+		z-index: 10;
+		width: 250px;
+		position: absolute;
+		-webkit-transform: translate(-100%, 0);
+		transform: translate(-100%, 0);
+		transition: transform 0.3s ease
+	}
+	.open {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0)
+	}
+	.navigation-items {
+		box-sizing: border-box;
+		text-align: center;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+	.top .location  {
+		font-size: 12px;
+	}
+	.top .rating  {
+		font-size: 12px;
+	}
+}
+@media screen and (min-width: 650px) {
+	.restaurant-content {
+		padding: 16px 20px 20px 20px;
+	}
+	.restaurant_title {
+		font-size: 20px;
+	}
+	.restaurant-description {
+		font-size: 14px;
+	}
+
+}
+@media screen and (min-width: 700px) {
+	.restaurant-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 1.545em;
+		grid-row-gap: 1.545em;
+	}
+}
+@media screen and (min-width: 900px) {
+	.restaurant-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+@media screen and (min-width: 1200px) {
+	main {
+		max-width: 1200px;
+	}
+}
